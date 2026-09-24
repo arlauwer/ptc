@@ -47,6 +47,11 @@ class CloudyInput:
 	def sphere(self):
 		return self.add("sphere", "simulation")
 
+	def oneZone(self):
+		self.add("stop zone 1", "simulation")
+		self.add("set dr 0", "simulation")
+		return self
+
 	# ---------- INPUT section ----------
 
 	def tableSED(self, filename):
